@@ -1,0 +1,10 @@
+services:
+  openresty:
+    container_name: openresty_server
+    image: openresty/openresty:1.25.3.2-5-centos7
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./conf/nginx.conf:/usr/local/openresty/nginx/conf/nginx.conf:ro
+      - ./conf/hello_world.conf:/usr/local/openresty/nginx/conf/hello_world.conf:ro
+      - ./logs:/usr/local/openresty/nginx/logs
