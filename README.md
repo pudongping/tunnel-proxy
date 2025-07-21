@@ -21,7 +21,7 @@ Hello, World from OpenResty + Docker Compose!
 其中 redis zset 数据示例类似
 
 ```bash
-zadd tunnel_proxy_pool 0 37.27.253.44:8099 0 46.218.15.74:80 0 185.49.31.207:8081
+zadd tunnel_proxy_pool 0 127.0.0.1:9001 0 4127.0.0.1:9002 0 127.0.0.1:9003
 ```
 
 ### 隧道代理示例请求
