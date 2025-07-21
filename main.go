@@ -11,15 +11,8 @@ import (
 func main() {
 	// https://www.proxy-list.download/SOCKS5
 	// proxyUrl, err := url.Parse("socks5://192.111.130.2:4145")
-	// ips := []string{
-	// 	"37.27.253.44:8099",
-	// 	"185.49.31.207:8081",
-	// 	"123.141.181.1:5031",
-	// 	"211.83.1.47:18000",
-	// 	"118.190.210.227:3128",
-	// 	"47.97.70.185:80",
-	// }
 	proxyUrl, err := url.Parse("http://127.0.0.1:9527")
+	// proxyUrl, err := url.Parse("http://159.203.61.169:3128")
 	if err != nil {
 		panic(err)
 	}
